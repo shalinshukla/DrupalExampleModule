@@ -1,0 +1,6 @@
+services:
+  services_build.adder:
+    class: Drupal\services_build\AdderService
+  services_build.string_formatter:
+    class: Drupal\services_build\StringFormatterServices
+    arguments: ['@services_build.adder']

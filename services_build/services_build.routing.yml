@@ -1,0 +1,7 @@
+services_build.display_string:
+  path: '/services-build/display'
+  defaults:
+    _controller: '\Drupal\services_build\Controller\ServicesDisplayController::displayServiceOutput'
+    _title: 'Format String service output'
+  requirements:
+    _permission: 'access content'
